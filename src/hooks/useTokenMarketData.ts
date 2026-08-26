@@ -43,7 +43,7 @@ export function useTokenMarketData(
                 }
 
                 console.error(
-                    'Unable to load YARL market data:',
+                    'Unable to load KEYCAT market data:',
                     error,
                 )
             } finally {

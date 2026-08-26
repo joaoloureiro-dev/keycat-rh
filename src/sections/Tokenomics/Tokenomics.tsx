@@ -25,7 +25,7 @@ function Tokenomics() {
         {
             label: 'TOTAL SUPPLY',
             value: '1B',
-            detail: '1,000,000,000 $YARL',
+            detail: '1,000,000,000 $KEYCAT',
             className: 'tokenomics__card--supply',
         },
         {
@@ -92,7 +92,7 @@ function Tokenomics() {
                     </h2>
 
                     <p className="tokenomics__description">
-                        No complicated tokenomics. Just $YARL on Robinhood Chain.
+                        No complicated tokenomics. Just $KEYCAT on Robinhood Chain.
                     </p>
                 </motion.div>
 

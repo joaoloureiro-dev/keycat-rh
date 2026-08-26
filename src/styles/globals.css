@@ -75,7 +75,16 @@ h4 {
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-tight);
 
-    color: var(--color-green-700);
+    color: var(--color-keycat-white);
+
+    -webkit-text-stroke:
+        1.5px var(--color-keycat-black);
+
+    paint-order: stroke fill;
+
+    text-shadow:
+        2px 2px 0 var(--color-keycat-black),
+        3px 3px 0 var(--color-keycat-black);
 }
 
 img,
@@ -90,15 +99,17 @@ canvas {
 
 #root {
     min-height: 100vh;
+
+    background: var(--color-background);
 }
 
 ::selection {
-    color: var(--color-text);
-    background: var(--color-yellow-300);
+    color: var(--color-keycat-black);
+    background: var(--color-keycat-lime);
 }
 
 :focus-visible {
-    outline: 3px solid var(--color-yellow-500);
+    outline: 3px solid var(--color-keycat-black);
     outline-offset: 4px;
 }
 
@@ -127,48 +138,8 @@ button {
         scroll-behavior: auto !important;
     }
 
-    /*
-     * The market ticker must remain continuously active.
-     * Override the global reduced-motion animation reset
-     * only for this functional live-data component.
-     */
-
     .blockchain-ticker__track {
         animation-duration: 28s !important;
         animation-iteration-count: infinite !important;
     }
-}
-
-/* Skip link */
-
-.skip-link {
-    position: fixed;
-    top: var(--space-4);
-    left: var(--space-4);
-
-    z-index: 9999;
-
-    padding:
-        var(--space-3) var(--space-5);
-
-    font-family: var(--font-family-data);
-    font-size: var(--font-size-xs);
-    font-weight: 700;
-
-    color: var(--color-green-900);
-    background: var(--color-yellow-400);
-
-    border: var(--border-heavy) solid var(--color-border);
-    border-radius: var(--radius-md);
-
-    box-shadow:
-        4px 5px 0 var(--color-border);
-
-    text-decoration: none;
-
-    transform: translateY(-200%);
-}
-
-.skip-link:focus {
-    transform: translateY(0);
 }

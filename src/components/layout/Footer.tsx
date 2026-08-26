@@ -30,11 +30,11 @@ function Footer() {
                     >
                         <img
                             className="site-footer__logo"
-                            src="/images/yarl-logo.png"
-                            alt="Yarl OG"
+                            src="/images/keycat-logo.png"
+                            alt="KEYCAT"
                         />
 
-                        <span>$YARL OG</span>
+                        <span>$KEYCAT</span>
                     </a>
 
                     <nav
@@ -105,7 +105,7 @@ function Footer() {
                     </strong>
 
                     <p>
-                        $YARL is a community-driven meme token.
+                        $KEYCAT is a community-driven meme token.
                         Always verify the official contract and
                         do your own research.
                     </p>
@@ -113,7 +113,7 @@ function Footer() {
 
                 <div className="site-footer__bottom">
                     <span>
-                        © 2026 YARL OG
+                        © 2026 KEYCAT
                     </span>
 
                     <span>

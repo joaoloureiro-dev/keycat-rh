@@ -55,7 +55,7 @@ function BlockchainTicker() {
     return (
         <div
             className="blockchain-ticker"
-            aria-label="Live YARL market information"
+            aria-label="Live KEYCAT market information"
         >
             <div className="blockchain-ticker__track">
                 <TickerGroup items={tickerItems} />

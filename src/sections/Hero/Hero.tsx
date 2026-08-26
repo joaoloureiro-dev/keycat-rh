@@ -10,7 +10,9 @@ function Hero() {
 
     async function handleCopyContract() {
         try {
-            await navigator.clipboard.writeText(tokenConfig.contractAddress)
+            await navigator.clipboard.writeText(
+                tokenConfig.contractAddress,
+            )
 
             setIsCopied(true)
 
@@ -23,7 +25,10 @@ function Hero() {
     }
 
     return (
-        <section className="hero" aria-labelledby="hero-title">
+        <section
+            className="hero"
+            aria-labelledby="hero-title"
+        >
             <div className="hero__inner">
                 <motion.div
                     className="hero__visual"
@@ -54,8 +59,8 @@ function Hero() {
                         <div className="hero__character-wrap">
                             <img
                                 className="hero__character"
-                                src="/images/yarl-character.png"
-                                alt="Yarl OG character"
+                                src="/images/keycat-character.png"
+                                alt="KEYCAT character playing a keyboard"
                             />
                         </div>
                     </motion.div>
@@ -80,7 +85,10 @@ function Hero() {
                         ROBINHOOD CHAIN
                     </motion.p>
 
-                    <h1 className="hero__title" id="hero-title">
+                    <h1
+                        className="hero__title"
+                        id="hero-title"
+                    >
                         <motion.span
                             className="hero__title-top"
                             initial={{
@@ -97,7 +105,7 @@ function Hero() {
                                 ease: [0.22, 1, 0.36, 1],
                             }}
                         >
-                            $YARL OG
+                            $KEYCAT
                         </motion.span>
 
                         <motion.span
@@ -118,7 +126,7 @@ function Hero() {
                                 ease: [0.22, 1, 0.36, 1],
                             }}
                         >
-                            IS HERE.
+                            PLAY THEM OFF.
                         </motion.span>
                     </h1>
 
@@ -137,7 +145,8 @@ function Hero() {
                             duration: 0.5,
                         }}
                     >
-                        The original Yarl has landed on Robinhood Chain.
+                        The legendary Keyboard Cat has landed on
+                        Robinhood Chain.
                     </motion.p>
 
                     <motion.div
@@ -161,7 +170,7 @@ function Hero() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            BUY $YARL
+                            BUY $KEYCAT
                         </a>
 
                         <a

@@ -21,9 +21,9 @@ const steps = [
     },
     {
         number: '03',
-        title: 'BUY $YARL',
+        title: 'BUY $KEYCAT',
         description:
-            'Open Uniswap, select $YARL and swap directly using the official contract.',
+            'Open Uniswap, select $KEYCAT and swap directly using the official contract.',
         className: 'how-to-buy__card--swap',
     },
 ]
@@ -64,7 +64,7 @@ function HowToBuy() {
                         id="how-to-buy-title"
                     >
                         HOW TO
-                        <span>BUY $YARL</span>
+                        <span>BUY $KEYCAT</span>
                     </h2>
 
                     <p className="how-to-buy__description">
@@ -154,7 +154,7 @@ function HowToBuy() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        BUY $YARL
+                        BUY $KEYCAT
                     </a>
 
                     <p className="how-to-buy__contract">

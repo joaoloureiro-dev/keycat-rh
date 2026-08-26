@@ -55,12 +55,12 @@ function Community() {
                         id="community-title"
                     >
                         JOIN THE
-                        <span>CULT.</span>
+                        <span>SHOW.</span>
                     </h2>
 
                     <p className="community__description">
-                        Yarl was born to challenge the king.
-                        Now the community takes it from here.
+                        Keyboard Cat has entertained the internet for generations.
+                        Now the community carries the legacy forward.
                     </p>
                 </motion.div>
 
@@ -86,16 +86,16 @@ function Community() {
                     >
                         <div className="community__main">
                             <span className="community__main-label">
-                                $YARL OG
+                                $KEYCAT
                             </span>
 
                             <strong className="community__main-title">
-                                THE OG IS BACK.
+                                THE LEGEND PLAYS ON.
                             </strong>
 
                             <p className="community__main-copy">
                                 Follow the story, join the raids
-                                and be part of the Yarl community
+                                and be part of the KEYCAT community
                                 on Robinhood Chain.
                             </p>
 
@@ -143,15 +143,15 @@ function Community() {
                         >
                             <div className="community__statement">
                                 <span>
-                                    NOT ANOTHER
+                                    THREE CATS.
                                 </span>
 
                                 <strong>
-                                    PEPE CLONE.
+                                    ONE KEYBOARD.
                                 </strong>
 
                                 <p>
-                                    THE ORIGINAL PEPE KILLER.
+                                    ONE LEGENDARY MEME.
                                 </p>
                             </div>
                         </motion.div>

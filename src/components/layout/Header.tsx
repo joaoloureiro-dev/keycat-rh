@@ -24,13 +24,13 @@ function Header() {
                 <a
                     className="site-header__brand"
                     href="#top"
-                    aria-label="Yarl OG home"
+                    aria-label="KEYCAT home"
                     onClick={closeMenu}
                 >
                     <img
                         className="site-header__logo"
-                        src="/images/yarl-logo.png"
-                        alt="Yarl OG"
+                        src="/images/keycat-logo.png"
+                        alt="KEYCAT"
                     />
                 </a>
 
@@ -55,7 +55,7 @@ function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    BUY $YARL
+                    BUY $KEYCAT
                 </a>
 
                 <button
@@ -116,7 +116,7 @@ function Header() {
                         rel="noopener noreferrer"
                         onClick={closeMenu}
                     >
-                        BUY $YARL
+                        BUY $KEYCAT
                     </a>
                 </div>
             </nav>
