@@ -1,7 +1,8 @@
-.yarl-panel {
+.meme-panel {
     position: relative;
 
     width: 100%;
+
     padding: var(--space-6);
 
     background: var(--color-surface);
@@ -14,28 +15,29 @@
     overflow: hidden;
 }
 
-.yarl-panel__content {
+.meme-panel__content {
     position: relative;
     z-index: 1;
 }
 
-.yarl-panel--yellow {
+.meme-panel--yellow {
     background: var(--color-yellow-100);
 }
 
-.yarl-panel--green {
+.meme-panel--green {
     background: var(--color-green-100);
 }
 
 @media (min-width: 768px) {
-    .yarl-panel {
+    .meme-panel {
         padding: var(--space-8);
+
         box-shadow: 8px 8px 0 var(--color-border);
     }
 }
 
 @media (min-width: 1024px) {
-    .yarl-panel {
+    .meme-panel {
         padding: var(--space-10);
     }
 }

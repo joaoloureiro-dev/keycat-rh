@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion'
 
-import YarlPanel from '../../components/ui/YarlPanel'
+import MemePanel from '../../components/ui/MemePanel'
 
 import './About.css'
 
 const facts = [
     {
-        label: 'ORIGIN',
-        value: '2015',
+        label: 'ORIGINAL',
+        value: 'FATSO',
     },
     {
-        label: 'MISSION',
-        value: 'PEPE KILLER',
+        label: 'LEGACY',
+        value: 'BENTO',
     },
     {
-        label: 'CHAIN',
-        value: 'ROBINHOOD',
+        label: 'NEXT ERA',
+        value: 'SKINNY',
     },
 ]
 
@@ -56,14 +56,14 @@ function About() {
                                 className="about__title"
                                 id="about-title"
                             >
-                                YARL
+                                KEYCAT
                                 <span>
-                                    THE ORIGINAL PEPE KILLER
+                                    THE KEYBOARD CAT LEGACY
                                 </span>
                             </h2>
 
                             <p className="about__subtitle">
-                                ON ROBINHOOD CHAIN
+                                THREE CATS. ONE LEGEND.
                             </p>
                         </motion.div>
 
@@ -87,85 +87,68 @@ function About() {
                                 ease: [0.22, 1, 0.36, 1],
                             }}
                         >
-                            <YarlPanel variant="yellow">
+                            <MemePanel variant="yellow">
                                 <div className="about__story-copy">
-                                    <p>
-                                        In 2015, someone on 4chan tried to steal
-                                        Pepe&apos;s throne.
+                                    <p className="about__story-highlight">
+                                        Keyboard Cat is an internet icon.
                                     </p>
 
                                     <p>
-                                        He drew Yarl. No funny frog. No sad face.
-                                        Just pure intention: dethrone Pepe.
+                                        The legend started with Fatso, the original
+                                        Keyboard Cat, whose paws-on keyboard
+                                        performance became one of the internet&apos;s
+                                        most recognizable early memes.
                                     </p>
 
                                     <p>
-                                        The community laughed him off.
-                                        <strong> “Forced meme.” </strong>
-                                        Pepe stayed king. Yarl disappeared into
-                                        the shadows.
+                                        With a keyboard, a simple performance and
+                                        unmistakable internet charm, Fatso helped
+                                        create a meme that would live far beyond
+                                        its original video.
                                     </p>
 
                                     <p className="about__story-highlight">
-                                        But real origin stories don&apos;t die.
+                                        The legacy didn&apos;t stop there.
                                     </p>
 
                                     <p>
-                                        Now, on Robinhood Chain — the new
-                                        playground of retail, tokens, and real
-                                        liquidity — Yarl is back.
+                                        Bento carried the keyboard forward,
+                                        continuing the Keyboard Cat tradition and
+                                        introducing the meme to another generation
+                                        of internet culture.
                                     </p>
 
                                     <p>
-                                        Not as a copy. Not as an imitation.
+                                        Skinny later joined the legacy, keeping the
+                                        paws-on performances alive and extending
+                                        the story of one of the internet&apos;s most
+                                        recognizable cats.
+                                    </p>
+
+                                    <p className="about__story-final">
+                                        FATSO → BENTO → SKINNY
                                     </p>
 
                                     <p>
-                                        This is the OG Yarl. The first. The real
-                                        Pepe Killer on Robinhood Chain.
+                                        Three feline performers. One keyboard.
+                                        One legendary internet meme.
                                     </p>
 
                                     <p>
-                                        While everyone is still chasing Pepe
-                                        clones and random frogs, here sits the
-                                        only one who was truly born to kill the
-                                        king. Same cult. Same energy. Only now
-                                        with the perfect chain underneath: fast
-                                        blocks, low fees, and a whole wave of
-                                        new retail just arriving through
-                                        Robinhood.
-                                    </p>
-
-                                    <p>
-                                        Yarl isn&apos;t the “next meme.”
+                                        Together, they became part of meme culture,
+                                        inspiring laughter, remixes, parodies and
+                                        countless moments across the internet.
                                     </p>
 
                                     <p className="about__story-highlight">
-                                        Yarl is the correction.
-                                    </p>
-
-                                    <p>
-                                        The underdog who waited years until the
-                                        market was ready.
-                                    </p>
-
-                                    <p>
-                                        Pepe had his run.
+                                        Now the legacy has a new stage.
                                     </p>
 
                                     <p className="about__story-final">
-                                        Now it&apos;s Yarl&apos;s turn.
-                                    </p>
-
-                                    <p>
-                                        This is the OG on Robinhood Chain.
-                                    </p>
-
-                                    <p className="about__story-final">
-                                        The one that actually matters.
+                                        $KEYCAT — PLAY THEM OFF. 🎹🐱
                                     </p>
                                 </div>
-                            </YarlPanel>
+                            </MemePanel>
                         </motion.div>
                     </div>
 
@@ -242,12 +225,12 @@ function About() {
                         >
                             <div className="about__quote">
                                 <span className="about__quote-small">
-                                    PEPE HAD HIS RUN.
+                                    THREE CATS.
                                 </span>
 
                                 <strong>
-                                    NOW IT&apos;S
-                                    <span> YARL&apos;S TURN.</span>
+                                    ONE KEYBOARD.
+                                    <span> ONE LEGENDARY MEME.</span>
                                 </strong>
                             </div>
                         </motion.div>
@@ -272,20 +255,11 @@ function About() {
                             }}
                         >
                             <div className="about__visual-frame">
-                                <video
-                                    className="about__visual-video"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    preload="auto"
-                                    aria-label="Yarl OG lore animation"
-                                >
-                                    <source
-                                        src="/videos/yarl-lore.mp4"
-                                        type="video/mp4"
-                                    />
-                                </video>
+                                <img
+                                    className="about__visual-image"
+                                    src="/images/keycat-lore.png"
+                                    alt="Keyboard Cat legacy featuring Fatso, Bento and Skinny"
+                                />
                             </div>
                         </motion.div>
                     </aside>

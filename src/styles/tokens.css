@@ -1,31 +1,37 @@
 :root {
     /* Brand */
-    --color-yellow-50: #fffdf0;
-    --color-yellow-100: #fff8c7;
-    --color-yellow-300: #ffe95c;
-    --color-yellow-400: #ffdf1f;
-    --color-yellow-500: #f6cb00;
+    --color-yellow-50: #f8ffd8;
+    --color-yellow-100: #efffb0;
+    --color-yellow-300: #dcff32;
+    --color-yellow-400: #d7f60b;
+    --color-yellow-500: #c7e600;
 
-    --color-green-100: #e7f3b8;
-    --color-green-300: #b8d95b;
-    --color-green-500: #6f8f2f;
-    --color-green-700: #40531c;
-    --color-green-900: #1f2b0e;
+    --color-green-100: #f3ffd0;
+    --color-green-300: #e2ff59;
+    --color-green-500: #d7f60b;
+    --color-green-700: #111111;
+    --color-green-900: #111111;
 
     /* Semantic colors */
-    --color-background: #fffbea;
-    --color-surface: #fff7c7;
-    --color-surface-strong: #ffe95c;
+    --color-background: #d7f60b;
+    --color-surface: #ffffff;
+    --color-surface-strong: #d7f60b;
 
-    --color-text: #1f2b0e;
-    --color-text-muted: #66724c;
+    --color-text: #111111;
+    --color-text-muted: #333333;
     --color-text-inverse: #ffffff;
 
-    --color-border: #40531c;
-    --color-border-soft: rgba(64, 83, 28, 0.24);
+    --color-border: #111111;
+    --color-border-soft: rgba(17, 17, 17, 0.24);
 
-    --color-positive: #3f8f36;
-    --color-negative: #c84343;
+    --color-positive: #15803d;
+    --color-negative: #d63b3b;
+
+    /* KEYCAT */
+    --color-keycat-lime: #d7f60b;
+    --color-keycat-lime-light: #efffb0;
+    --color-keycat-white: #ffffff;
+    --color-keycat-black: #111111;
 
     /* Typography */
     --font-family-display:
@@ -41,6 +47,7 @@
     --font-family-data:
         "Roboto Mono Variable",
         monospace;
+
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -90,8 +97,8 @@
     --border-heavy: 3px;
 
     /* Shadows */
-    --shadow-soft: 0 10px 30px rgba(64, 83, 28, 0.1);
-    --shadow-card: 0 14px 0 rgba(64, 83, 28, 0.12);
+    --shadow-soft: 0 10px 30px rgba(17, 17, 17, 0.12);
+    --shadow-card: 0 14px 0 rgba(17, 17, 17, 0.14);
 
     /* Motion */
     --duration-fast: 150ms;
