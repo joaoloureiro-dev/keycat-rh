@@ -59,8 +59,9 @@ function Community() {
                     </h2>
 
                     <p className="community__description">
-                        Keyboard Cat has entertained the internet for generations.
-                        Now the community carries the legacy forward.
+                        The keyboard has landed on Robinhood Chain.
+                        Join the community carrying one of the internet&apos;s
+                        most legendary memes into its next era.
                     </p>
                 </motion.div>
 
@@ -94,9 +95,9 @@ function Community() {
                             </strong>
 
                             <p className="community__main-copy">
-                                Follow the story, join the raids
-                                and be part of the KEYCAT community
-                                on Robinhood Chain.
+                                From VHS to the internet, from Base to Robinhood.
+                                Follow the story, join the raids and be part
+                                of the next stage of KEYCAT.
                             </p>
 
                             <div className="community__socials">
@@ -143,15 +144,15 @@ function Community() {
                         >
                             <div className="community__statement">
                                 <span>
-                                    THREE CATS.
+                                    FROM VHS.
                                 </span>
 
                                 <strong>
-                                    ONE KEYBOARD.
+                                    TO THE INTERNET.
                                 </strong>
 
                                 <p>
-                                    ONE LEGENDARY MEME.
+                                    NOW ON ROBINHOOD.
                                 </p>
                             </div>
                         </motion.div>

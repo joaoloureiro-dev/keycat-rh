@@ -6,16 +6,16 @@ import './About.css'
 
 const facts = [
     {
-        label: 'ORIGINAL',
-        value: 'FATSO',
+        label: 'ORIGIN',
+        value: '1984 VHS',
     },
     {
-        label: 'LEGACY',
-        value: 'BENTO',
+        label: 'INTERNET',
+        value: 'ICON',
     },
     {
-        label: 'NEXT ERA',
-        value: 'SKINNY',
+        label: 'ON-CHAIN',
+        value: 'BASE → RH',
     },
 ]
 
@@ -58,12 +58,12 @@ function About() {
                             >
                                 KEYCAT
                                 <span>
-                                    THE KEYBOARD CAT LEGACY
+                                    THE LEGEND PLAYS ON
                                 </span>
                             </h2>
 
                             <p className="about__subtitle">
-                                THREE CATS. ONE LEGEND.
+                                BEFORE MEMECOINS, THERE WAS KEYBOARD CAT.
                             </p>
                         </motion.div>
 
@@ -90,58 +90,48 @@ function About() {
                             <MemePanel variant="yellow">
                                 <div className="about__story-copy">
                                     <p className="about__story-highlight">
-                                        Keyboard Cat is an internet icon.
+                                        Before memecoins, there was Keyboard Cat.
                                     </p>
 
                                     <p>
-                                        The legend started with Fatso, the original
-                                        Keyboard Cat, whose paws-on keyboard
-                                        performance became one of the internet&apos;s
-                                        most recognizable early memes.
-                                    </p>
-
-                                    <p>
-                                        With a keyboard, a simple performance and
-                                        unmistakable internet charm, Fatso helped
-                                        create a meme that would live far beyond
-                                        its original video.
+                                        Born from a 1984 VHS recording, Keyboard Cat
+                                        went on to become one of the internet&apos;s
+                                        most iconic early memes — playing people off
+                                        the internet for decades.
                                     </p>
 
                                     <p className="about__story-highlight">
-                                        The legacy didn&apos;t stop there.
+                                        The legend eventually made its way on-chain
+                                        through Base.
                                     </p>
 
                                     <p>
-                                        Bento carried the keyboard forward,
-                                        continuing the Keyboard Cat tradition and
-                                        introducing the meme to another generation
-                                        of internet culture.
+                                        But every legend needs a new stage.
+                                    </p>
+
+                                    <p className="about__story-highlight">
+                                        Now, the keyboard has landed on Robinhood Chain.
                                     </p>
 
                                     <p>
-                                        Skinny later joined the legacy, keeping the
-                                        paws-on performances alive and extending
-                                        the story of one of the internet&apos;s most
-                                        recognizable cats.
+                                        A new chain.
+                                        <br />
+                                        A new community.
+                                        <br />
+                                        The same legendary cat.
                                     </p>
 
                                     <p className="about__story-final">
-                                        FATSO → BENTO → SKINNY
+                                        VHS → INTERNET → BASE → ROBINHOOD
                                     </p>
 
                                     <p>
-                                        Three feline performers. One keyboard.
-                                        One legendary internet meme.
-                                    </p>
-
-                                    <p>
-                                        Together, they became part of meme culture,
-                                        inspiring laughter, remixes, parodies and
-                                        countless moments across the internet.
+                                        The cat never stopped playing.
                                     </p>
 
                                     <p className="about__story-highlight">
-                                        Now the legacy has a new stage.
+                                        Now it&apos;s Robinhood&apos;s turn to hear
+                                        the music.
                                     </p>
 
                                     <p className="about__story-final">
@@ -225,12 +215,14 @@ function About() {
                         >
                             <div className="about__quote">
                                 <span className="about__quote-small">
-                                    THREE CATS.
+                                    FROM VHS.
                                 </span>
 
                                 <strong>
-                                    ONE KEYBOARD.
-                                    <span> ONE LEGENDARY MEME.</span>
+                                    TO THE INTERNET.
+                                    <span>
+                                        TO ROBINHOOD.
+                                    </span>
                                 </strong>
                             </div>
                         </motion.div>
@@ -258,7 +250,7 @@ function About() {
                                 <img
                                     className="about__visual-image"
                                     src="/images/keycat-lore.png"
-                                    alt="Keyboard Cat legacy featuring Fatso, Bento and Skinny"
+                                    alt="Keyboard Cat continuing its legendary journey from the internet to Robinhood Chain"
                                 />
                             </div>
                         </motion.div>

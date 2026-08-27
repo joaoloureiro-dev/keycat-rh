@@ -4,7 +4,9 @@
     width: 100%;
 
     padding:
-        var(--space-8) var(--page-padding) var(--space-10);
+        var(--space-12) var(--page-padding) var(--space-16);
+
+    background: var(--color-white);
 
     overflow: hidden;
 }
@@ -15,20 +17,24 @@
     margin-inline: auto;
 }
 
-/* Heading */
+/* =========================
+   HEADING
+   ========================= */
 
 .how-to-buy__heading {
-    width: min(100%, 44rem);
+    width: min(100%, 46rem);
 
     margin-inline: auto;
-
-    padding-inline: var(--space-2);
 
     text-align: center;
 }
 
 .how-to-buy__eyebrow {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 2.25rem;
 
     padding:
         var(--space-2) var(--space-4);
@@ -37,28 +43,37 @@
     font-size: var(--font-size-xs);
     font-weight: 700;
 
-    color: var(--color-green-900);
-    background: var(--color-yellow-300);
+    letter-spacing: 0.08em;
 
-    border: var(--border-medium) solid var(--color-border);
-    border-radius: var(--radius-pill);
+    color: var(--color-black);
+    background: var(--color-lime-400);
 
-    transform: rotate(0.7deg);
+    border: 2px solid var(--color-black);
+    border-radius: var(--radius-sm);
+
+    box-shadow:
+        0 3px 0 var(--color-black);
 }
 
 .how-to-buy__title {
     width: 100%;
 
-    margin-top: var(--space-4);
-
-    padding-inline: var(--space-1);
+    margin-top: var(--space-5);
 
     font-family: var(--font-family-display);
-    font-size: clamp(2.9rem, 13vw, 6rem);
+    font-size: clamp(2.8rem, 12vw, 5.5rem);
     font-weight: 400;
-    line-height: 0.88;
+    line-height: 0.96;
 
-    color: var(--color-green-700);
+    color: var(--color-white);
+
+    -webkit-text-stroke:
+        1.5px var(--color-black);
+
+    paint-order: stroke fill;
+
+    text-shadow:
+        2px 2px 0 var(--color-black);
 
     overflow-wrap: break-word;
 }
@@ -66,30 +81,24 @@
 .how-to-buy__title span {
     display: block;
 
-    margin-top: 0.08em;
+    margin-top: var(--space-2);
 
-    color: var(--color-yellow-500);
+    color: var(--color-lime-400);
 
     -webkit-text-stroke:
-        1.5px var(--color-green-700);
+        1.5px var(--color-black);
+
+    paint-order: stroke fill;
 
     text-shadow:
-        1px 1px 0 var(--color-green-700),
-        2px 2px 0 var(--color-green-700),
-        3px 3px 0 var(--color-green-700),
-        4px 4px 0 var(--color-green-700),
-        6px 7px 0 rgba(64, 83, 28, 0.14);
-
-    transform: rotate(-0.7deg);
+        2px 2px 0 var(--color-black);
 }
 
 .how-to-buy__description {
     width: min(100%, 34rem);
 
     margin:
-        var(--space-4) auto 0;
-
-    padding-inline: var(--space-2);
+        var(--space-5) auto 0;
 
     font-size: var(--font-size-base);
     font-weight: 600;
@@ -100,19 +109,18 @@
     text-align: center;
 }
 
-/* Steps */
+/* =========================
+   STEPS
+   ========================= */
 
 .how-to-buy__steps {
     display: grid;
 
-    gap: var(--space-6);
+    gap: var(--space-4);
 
-    width: min(100%, 44rem);
+    width: 100%;
 
-    margin:
-        var(--space-8) auto 0;
-
-    padding-inline: var(--space-2);
+    margin-top: var(--space-10);
 }
 
 .how-to-buy__card-motion {
@@ -120,61 +128,128 @@
     min-width: 0;
 }
 
+/* =========================
+   CARD
+   ========================= */
+
 .how-to-buy__card {
     position: relative;
 
-    width: calc(100% - var(--space-2));
-    max-width: 100%;
-    min-width: 0;
-    min-height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
-    margin-inline: auto;
+    width: 100%;
+    min-width: 0;
+    min-height: 15rem;
 
     padding:
-        var(--space-6) var(--space-5);
+        var(--space-7) var(--space-5) var(--space-6);
 
-    border: var(--border-heavy) solid var(--color-border);
-    border-radius:
-        1.8rem 1.5rem 2.1rem 1.6rem;
+    background: var(--color-white);
+
+    border: 2px solid var(--color-black);
+    border-radius: var(--radius-md);
 
     box-shadow:
-        6px 7px 0 var(--color-border);
+        0 5px 0 var(--color-black);
+
+    text-align: center;
 
     overflow: hidden;
 }
 
+/* Keyboard strip */
+
+.how-to-buy__card::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 0.65rem;
+
+    background:
+        repeating-linear-gradient(90deg,
+            var(--color-black) 0,
+            var(--color-black) 1.5rem,
+            transparent 1.5rem,
+            transparent 2.55rem);
+
+    pointer-events: none;
+}
+
+/* =========================
+   NUMBER
+   ========================= */
+
 .how-to-buy__number {
+    position: relative;
+    z-index: 1;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    width: 3.25rem;
-    height: 3.25rem;
+    min-width: 3.4rem;
+    min-height: 2.75rem;
+
+    padding:
+        var(--space-2) var(--space-3);
 
     font-family: var(--font-family-display);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+    line-height: 1;
 
-    color: var(--color-green-900);
-    background: var(--color-yellow-300);
+    color: var(--color-black);
+    background: var(--color-lime-400);
 
-    border: var(--border-heavy) solid var(--color-border);
-    border-radius: 50%;
+    border: 2px solid var(--color-black);
+    border-radius: var(--radius-sm);
 }
 
+/* =========================
+   CARD CONTENT
+   ========================= */
+
 .how-to-buy__card-title {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
     margin-top: var(--space-5);
 
     font-family: var(--font-family-display);
-    font-size: clamp(2rem, 9vw, 3rem);
+    font-size: clamp(1.65rem, 7vw, 2.5rem);
     font-weight: 400;
-    line-height: 0.95;
+    line-height: 1.05;
 
-    color: var(--color-green-900);
+    color: var(--color-white);
 
-    overflow-wrap: break-word;
+    -webkit-text-stroke:
+        1.5px var(--color-black);
+
+    paint-order: stroke fill;
+
+    text-shadow:
+        2px 2px 0 var(--color-black);
+
+    text-align: center;
+
+    overflow-wrap: anywhere;
 }
 
 .how-to-buy__card-description {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 27rem;
+
     margin-top: var(--space-4);
 
     font-size: var(--font-size-base);
@@ -182,29 +257,37 @@
     line-height: 1.6;
 
     color: var(--color-text-muted);
+
+    text-align: center;
 }
 
-/* Individual rotations */
+/* =========================
+   CARD VARIANTS
+   ========================= */
 
 .how-to-buy__card--wallet {
-    background: var(--color-green-100);
-
-    transform: rotate(-0.45deg);
+    background: var(--color-white);
 }
 
 .how-to-buy__card--fund {
-    background: var(--color-yellow-100);
-
-    transform: rotate(0.5deg);
+    background: var(--color-lime-400);
 }
 
 .how-to-buy__card--swap {
-    background: var(--color-yellow-300);
-
-    transform: rotate(-0.35deg);
+    background: var(--color-white);
 }
 
-/* CTA */
+.how-to-buy__card--fund .how-to-buy__card-description {
+    color: var(--color-black);
+}
+
+.how-to-buy__card--fund .how-to-buy__number {
+    background: var(--color-white);
+}
+
+/* =========================
+   CTA
+   ========================= */
 
 .how-to-buy__action {
     display: flex;
@@ -213,9 +296,9 @@
 
     gap: var(--space-3);
 
-    margin-top: var(--space-8);
+    width: 100%;
 
-    padding-inline: var(--space-2);
+    margin-top: var(--space-10);
 }
 
 .how-to-buy__button {
@@ -229,41 +312,34 @@
         var(--space-3) var(--space-7);
 
     font-family: var(--font-family-display);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-lg);
+    line-height: 1.1;
 
-    color: var(--color-green-900);
-    background: var(--color-yellow-400);
+    color: var(--color-black);
+    background: var(--color-lime-400);
 
-    border: var(--border-heavy) solid var(--color-border);
-    border-radius: var(--radius-lg);
+    border: 3px solid var(--color-black);
+    border-radius: var(--radius-md);
 
     box-shadow:
-        5px 6px 0 var(--color-border);
+        0 5px 0 var(--color-black);
 
     text-decoration: none;
     text-align: center;
 
-    transform: rotate(0.5deg);
-
     transition:
-        transform 160ms ease,
-        box-shadow 160ms ease;
+        transform var(--duration-fast) var(--ease-standard),
+        box-shadow var(--duration-fast) var(--ease-standard),
+        background-color var(--duration-fast) var(--ease-standard);
 }
 
 .how-to-buy__button:hover {
-    transform:
-        translateY(-2px) rotate(0.5deg);
+    background: var(--color-lime-100);
+
+    transform: translateY(2px);
 
     box-shadow:
-        6px 7px 0 var(--color-border);
-}
-
-.how-to-buy__button:active {
-    transform:
-        translateY(1px) rotate(0.5deg);
-
-    box-shadow:
-        4px 5px 0 var(--color-border);
+        0 3px 0 var(--color-black);
 }
 
 .how-to-buy__contract {
@@ -278,7 +354,9 @@
     text-align: center;
 }
 
-/* Very small mobile */
+/* =========================
+   VERY SMALL MOBILE
+   ========================= */
 
 @media (max-width: 359px) {
     .how-to-buy {
@@ -286,46 +364,38 @@
             var(--space-8) var(--space-3) var(--space-10);
     }
 
-    .how-to-buy__heading {
-        padding-inline: var(--space-1);
+    .how-to-buy__title {
+        font-size: clamp(2.4rem, 12vw, 3.4rem);
     }
 
     .how-to-buy__steps {
-        gap: var(--space-5);
+        gap: var(--space-4);
 
-        margin-top: var(--space-7);
-
-        padding-inline: var(--space-1);
-    }
-
-    .how-to-buy__title {
-        font-size: clamp(2.65rem, 13vw, 3.5rem);
+        margin-top: var(--space-8);
     }
 
     .how-to-buy__card {
-        width: calc(100% - var(--space-3));
-
-        min-height: 13.5rem;
+        min-height: 14rem;
 
         padding:
             var(--space-6) var(--space-4);
     }
 
     .how-to-buy__card-title {
-        font-size: clamp(1.9rem, 8.5vw, 2.6rem);
-    }
-
-    .how-to-buy__action {
-        margin-top: var(--space-7);
+        font-size: clamp(1.55rem, 7.5vw, 2.2rem);
     }
 
     .how-to-buy__button {
+        width: 100%;
+
         padding:
-            var(--space-3) var(--space-6);
+            var(--space-3) var(--space-5);
     }
 }
 
-/* Tablet */
+/* =========================
+   TABLET
+   ========================= */
 
 @media (min-width: 768px) {
     .how-to-buy {
@@ -333,45 +403,34 @@
             var(--space-14) var(--page-padding) var(--space-16);
     }
 
-    .how-to-buy__heading {
-        padding-inline: var(--space-5);
-    }
-
     .how-to-buy__description {
         font-size: var(--font-size-lg);
     }
 
     .how-to-buy__steps {
-        width: min(100%, 52rem);
+        gap: var(--space-6);
 
-        gap: var(--space-7);
-
-        margin-top: var(--space-10);
-
-        padding-inline: var(--space-4);
+        margin-top: var(--space-12);
     }
 
     .how-to-buy__card {
-        width: 100%;
         min-height: 16rem;
 
         padding:
-            var(--space-8) var(--space-8);
+            var(--space-8) var(--space-6);
 
         box-shadow:
-            7px 8px 0 var(--color-border);
+            0 6px 0 var(--color-black);
     }
 
-    .how-to-buy__card--wallet {
-        transform: rotate(-0.8deg);
-    }
+    .how-to-buy__card-title {
+        font-size: clamp(1.9rem, 4vw, 2.7rem);
 
-    .how-to-buy__card--fund {
-        transform: rotate(0.9deg);
-    }
+        -webkit-text-stroke:
+            1.75px var(--color-black);
 
-    .how-to-buy__card--swap {
-        transform: rotate(-0.6deg);
+        text-shadow:
+            2px 2px 0 var(--color-black);
     }
 
     .how-to-buy__card-description {
@@ -379,7 +438,7 @@
     }
 
     .how-to-buy__action {
-        margin-top: var(--space-10);
+        margin-top: var(--space-12);
     }
 
     .how-to-buy__button {
@@ -388,30 +447,21 @@
         padding:
             var(--space-4) var(--space-8);
 
-        box-shadow:
-            6px 7px 0 var(--color-border);
+        font-size: var(--font-size-xl);
 
-        transform: rotate(0.8deg);
+        box-shadow:
+            0 6px 0 var(--color-black);
     }
 
     .how-to-buy__button:hover {
-        transform:
-            translateY(-3px) rotate(0.8deg);
-
         box-shadow:
-            7px 9px 0 var(--color-border);
-    }
-
-    .how-to-buy__button:active {
-        transform:
-            translateY(1px) rotate(0.8deg);
-
-        box-shadow:
-            4px 5px 0 var(--color-border);
+            0 4px 0 var(--color-black);
     }
 }
 
-/* Desktop */
+/* =========================
+   DESKTOP
+   ========================= */
 
 @media (min-width: 1024px) {
     .how-to-buy {
@@ -420,11 +470,11 @@
     }
 
     .how-to-buy__heading {
-        padding-inline: 0;
+        width: min(100%, 48rem);
     }
 
     .how-to-buy__title {
-        font-size: clamp(3rem, 6vw, 6rem);
+        font-size: clamp(3.4rem, 5vw, 5.8rem);
     }
 
     .how-to-buy__steps {
@@ -433,60 +483,58 @@
 
         align-items: stretch;
 
-        width: min(100%, 72rem);
+        gap: var(--space-6);
 
-        gap: var(--space-7);
-
-        margin-top: var(--space-12);
-
-        padding-inline: 0;
+        margin-top: var(--space-16);
     }
 
     .how-to-buy__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
         height: 100%;
         min-height: 20rem;
 
         padding:
-            var(--space-8) var(--space-7);
+            var(--space-8) var(--space-6);
 
-        text-align: center;
+        box-shadow:
+            0 7px 0 var(--color-black);
     }
 
-    .how-to-buy__card--wallet {
-        transform: rotate(-1deg);
-    }
+    .how-to-buy__number {
+        min-width: 3.75rem;
+        min-height: 3rem;
 
-    .how-to-buy__card--fund {
-        transform: rotate(1.1deg);
-    }
-
-    .how-to-buy__card--swap {
-        transform: rotate(-0.7deg);
+        font-size: var(--font-size-xl);
     }
 
     .how-to-buy__card-title {
-        width: 100%;
+        font-size: clamp(1.75rem, 2.2vw, 2.6rem);
 
-        font-size: clamp(2rem, 3vw, 3rem);
+        -webkit-text-stroke:
+            2px var(--color-black);
 
-        text-align: center;
+        text-shadow:
+            3px 3px 0 var(--color-black);
     }
 
     .how-to-buy__card-description {
-        width: 100%;
-
-        text-align: center;
+        font-size: var(--font-size-base);
     }
 
     .how-to-buy__action {
-        margin-top: var(--space-10);
+        margin-top: var(--space-12);
+    }
+}
 
-        padding-inline: 0;
+/* =========================
+   LARGE DESKTOP
+   ========================= */
+
+@media (min-width: 1280px) {
+    .how-to-buy__steps {
+        gap: var(--space-8);
+    }
+
+    .how-to-buy__card {
+        min-height: 21rem;
     }
 }

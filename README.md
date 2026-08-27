@@ -2,27 +2,35 @@
 
 Official landing page for **KEYCAT ($KEYCAT)** on Robinhood Chain.
 
-> Three cats. One keyboard. One legendary meme.
+> Before memecoins, there was Keyboard Cat.
 
 ---
 
 ## About
 
-Keyboard Cat is an iconic internet meme featuring a cat named Fatso, whose keyboard performance became one of the internet’s most recognizable early memes.
+Keyboard Cat is one of the internet’s most iconic early memes.
 
-The legacy continued with Bento and Skinny, carrying Keyboard Cat forward across different eras of internet culture.
+Born from a **1984 VHS recording**, Keyboard Cat later became a global internet legend, known for playing people off the internet for decades.
 
-Three cats.
+The meme eventually made its way on-chain through **Base**.
 
-One keyboard.
+But every legend needs a new stage.
 
-One legendary meme.
+Now the keyboard has landed on **Robinhood Chain**.
 
-**FATSO → BENTO → SKINNY**
+A new chain.
 
-Now that legacy has a new stage on **Robinhood Chain**.
+A new community.
 
-**$KEYCAT — Play them off.**
+The same legendary cat.
+
+**VHS → Internet → Base → Robinhood**
+
+The cat never stopped playing.
+
+Now it’s Robinhood’s turn to hear the music.
+
+**$KEYCAT — Play them off. 🎹🐱**
 
 ---
 
@@ -46,13 +54,15 @@ The project is fully responsive and developed using a mobile-first approach.
 
 - Mobile-first responsive design
 - Custom KEYCAT visual system
+- White, black and lime color palette
 - Animated Hero section
 - Keyboard Cat lore section
-- Lore image
+- Custom lore image
 - Live blockchain market ticker
 - Live token liquidity data
 - Tokenomics section
 - How to Buy section
+- Community section
 - Telegram integration
 - X integration
 - Direct Uniswap buy link
@@ -97,3 +107,79 @@ If the token has not yet been indexed by DEX Screener, unavailable values use ap
 
 ```text
 0xFBf3C7fBC6349Aff23ee7faD6B538c45d870478A
+
+Official Links
+
+Telegram
+
+https://t.me/KEYCAT_ROBINHOOD
+
+X
+
+https://x.com/KeycatRH
+
+Buy on Uniswap
+
+https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xFBf3C7fBC6349Aff23ee7faD6B538c45d870478A
+
+Project Structure
+src/
+├── components/
+│   ├── layout/
+│   ├── ticker/
+│   └── ui/
+├── data/
+├── sections/
+│   ├── About/
+│   ├── Community/
+│   ├── Hero/
+│   ├── HowToBuy/
+│   └── Tokenomics/
+├── styles/
+├── types/
+├── App.tsx
+└── main.tsx
+Development
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Create a production build:
+
+npm run build
+Design Direction
+
+KEYCAT uses a custom visual identity inspired by:
+
+Keyboard and piano elements
+Early internet meme culture
+Retro web aesthetics
+Bold geometric UI
+High-contrast typography
+
+The core palette combines:
+
+White
+Black
+KEYCAT Lime
+
+The interface avoids overly organic or tilted layouts in favor of clean, straight panels and keyboard-inspired details.
+
+Disclaimer
+
+$KEYCAT is a community-driven memecoin project.
+
+Nothing on this website should be considered financial advice.
+
+Always do your own research.
+
+KEYCAT
+
+From VHS → Internet → Base → Robinhood.
+
+$KEYCAT — Play them off. 🎹🐱
